@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <div className="relative min-h-screen bg-indigo-900 flex items-center justify-center">
+      <div className="relative min-h-screen bg-indigo-900">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover opacity-40"
@@ -21,7 +21,7 @@ function HomePage() {
           />
           <div className="absolute inset-0 bg-indigo-900 opacity-50" />
         </div>
-        <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 text-center">
+        <div className="relative pt-16 pl-6 sm:pt-20 sm:pl-12 lg:pt-24 lg:pl-16 max-w-xl">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl animate-fade-in">
             Introduction to AI for Professional Foresters
           </h1>
@@ -30,7 +30,7 @@ function HomePage() {
             conservation efforts, and sustainable practices.
           </p>
           
-          <div className="mt-10 max-w-md mx-auto animate-fade-in">
+          <div className="mt-10 max-w-md animate-fade-in">
             <form onSubmit={handleSignup}>
               <div className="flex flex-col space-y-4">
                 <label htmlFor="email" className="sr-only">Email address</label>
