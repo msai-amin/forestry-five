@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Mock data for courses
 const courses = [
@@ -27,7 +28,7 @@ function CourseList() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {courses.map((course) => (
-            <div key={course.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <Link to={`/course/${course.id}`} key={course.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="w-full h-48 bg-gray-300"></div>
               <div className="p-4">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">{course.title}</h2>
@@ -43,7 +44,7 @@ function CourseList() {
                   Enroll Now
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
